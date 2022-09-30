@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 40px;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas:
+    "header header sidebar"
+    "content content sidebar"
+    "footer footer siderbar";
+}
+
+.box {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.simonsays {
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttoncontainer {
+    margin-left: 50px;
+    padding: 50px;
+    align-items: center;
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    transform: rotate(45deg);
+}
+
+.section {
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.section:active,
+.active {
+    filter: brightness(125%);
+}
+
+.red {
+    background-color: #EE6352;
+}
+
+.blue {
+    background-color: #08B2E3;
+}
+
+.green {
+    background-color: #57A773;
+}
+
+.yellow {
+    background-color: #FFDF64;
+}
+
+#startbutton {
+    top: 20px;
+    right: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #587792;
+    padding: 5px;
+}
+
+#startbutton:disabled {
+    background-color: #eee;
+}
+
+.winner {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }

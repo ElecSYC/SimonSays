@@ -1,2 +1,5 @@
-# SimonSays
-SimonSays - PianoTiles "Universidad Pontificia Bolivariana" Ing De Sistemas e Informatica
+# Simon-Dice
+
+Desarrollo de aplicaciones web / SimonDice - Universidad Pontificia Bolivariana
+
+Elec-

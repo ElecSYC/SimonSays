@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimonSays</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <link rel = "icon" href ="C:\Users\joses\OneDrive\Documentos\Electron500\Programacion\Proyectos\SimonSays\src\iconweb.png" type = "image/x-icon">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class=" box header">
+            <div class="title">SimonSays</div>
+        </div>
+        <div class="box content">
+            <div class="simonsays">
+                <div class="buttoncontainer">
+                    <div class="section red"></div>
+                    <div class="section yellow"></div>
+                    <div class="section blue"></div>
+                    <div class="section green"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" box sidebar">
+            <div class="username">
+                <div class="user">
+                    <label for="Username">Username</label><br>
+                    <input type="text" id="username" name="username">
+                </div><br>
+            </div>
+            <div class="clasification">
+                <div class="topScores">Top Scores</div><br>
+                    <ul>
+                        <li>1. AEMS = Round 25</li>
+                        <li>2. LOST = Round 22</li>
+                        <li>3. AMDF = Round 17</li>
+                        <li>4. ELEC = Round16</li>
+                        <li>5. SOSS = Round 15</li>
+                        <li>6. USER = Round 12</li>
+                    </ul>
+                </div>
+                <br><br><button id="startbutton">¡Comenzar!</button><br><br>
+                <div id="round"></div>
+            </div>
+            <div class="difficult">
+                <div class="difficultContainer">
+                    <button id="easy">Facil</button>
+                    <button id="medium">Medio</button>
+                    <button id="hard">Dificil</button>
+                    <br><br><p>¡Completa exitosamente todas las dificultades!</p>
+                </div>
+            </div>
+            <div class="box footer">
+                <div class="authors">
+                    <div class="name">Jose Santiago Benavides Cespedes</div>
+                    <p>"Universidad Pontificia Bolivariana - Desarrollo de Aplicaciones Web</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
